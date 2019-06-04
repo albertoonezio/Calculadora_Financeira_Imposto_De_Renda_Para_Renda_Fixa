@@ -56,25 +56,25 @@ namespace Calculadora_Imposto_De_Renda
 
             if (meses <= 12)
             {
-                imposto = rendimentoTotal * 0.0025;
+                imposto = rendimentoTotal * 0.25;
                 rendimentoTotal -= imposto;
             }
 
             else if (meses > 12 && meses <= 24)
             {
-                imposto = rendimentoTotal * 0.0015;
+                imposto = rendimentoTotal * 0.15;
                 rendimentoTotal -= imposto;
             }
 
             else if (meses > 24 && meses <= 36)
             {
-                imposto = rendimentoTotal * 0.0005;
+                imposto = rendimentoTotal * 0.05;
                 rendimentoTotal -= imposto;
             }
 
             else
             {
-                imposto = rendimentoTotal * 0.0001;
+                imposto = rendimentoTotal * 0.01;
                 rendimentoTotal -= imposto;
             }
 
